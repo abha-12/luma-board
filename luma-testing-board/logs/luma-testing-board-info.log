@@ -1,0 +1,20 @@
+[INFO ] [main] BaseTest - ChromeDriver initialized.
+[INFO ] [main] LumaListener - launchTest started.
+[INFO ] [main] LumaListener - launchTest successful.
+[INFO ] [main] LumaListener - signInTest started.
+[INFO ] [main] LoginPage - Entered valid email newbie@tester.com
+[INFO ] [main] LoginPage - Entered valid password
+[INFO ] [main] SignInAndBuyAProductTest - Successfully logged in.
+[INFO ] [main] LumaListener - signInTest successful.
+[INFO ] [main] LumaListener - selectAProductTest started.
+[INFO ] [main] HomePage - Hovering over 'Gear' category.
+[INFO ] [main] HomePage - Selected Bags category.
+[INFO ] [main] BagsPage - Selected Sort By Price.
+[INFO ] [main] BagsPage - Added the first product in results to cart.
+[INFO ] [main] BagsPage - Navigating to cart page.
+[INFO ] [main] LumaListener - selectAProductTest successful.
+[INFO ] [main] LumaListener - checkOutProductTest started.
+[INFO ] [main] CartPage - Initiating checkout process.
+[INFO ] [main] ShippingDetailsPage - Selecting shipping rate.
+[INFO ] [main] OrderReviewPage - Reviewing and placing order.
+[INFO ] [main] LumaListener - checkOutProductTest successful.
