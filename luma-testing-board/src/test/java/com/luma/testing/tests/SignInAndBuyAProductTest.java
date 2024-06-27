@@ -29,12 +29,12 @@ public class SignInAndBuyAProductTest extends BaseTest {
 
 	@Test
 	public void launchTest() {
-		//String url = PropertyReader.retrieveProperty("url");
-		driver.get(PropertyReader.retrieveProperty("url"));
-		//logger.info("Launched url " + url);
+		String url = PropertyReader.retrieveProperty("url");
+		driver.get(url);
+		logger.info("Launched url " + url);
 		homePage = new HomePage();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
 	}
 
 	@Test(dependsOnMethods = "launchTest")

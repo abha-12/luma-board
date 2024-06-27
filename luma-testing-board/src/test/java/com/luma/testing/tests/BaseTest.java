@@ -1,5 +1,7 @@
 package com.luma.testing.tests;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +35,7 @@ public class BaseTest {
 		}
 		BasePage.driver = driver;
 		LumaListener.driver = driver;
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 	}
 

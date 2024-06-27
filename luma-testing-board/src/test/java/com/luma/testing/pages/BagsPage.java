@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,6 +15,7 @@ public class BagsPage extends GearPage {
 
 	public static final Logger logger = LogManager.getLogger(BagsPage.class);
 
+	// List of WebElements sorted by price
 	@FindBy(xpath = "//span[@data-price-type='finalPrice']")
 	List<WebElement> productsByPrice;
 
@@ -49,6 +49,8 @@ public class BagsPage extends GearPage {
 		sortByDrpDwn.selectByVisibleText("Price");
 		logger.info("Selected Sort By Price.");
 	}
+
+	// checking if the list is properly sorted by price.
 
 	public boolean isPriceSortProper() {
 		for (int i = 0; i < productsByPrice.size() - 2; i++) {
